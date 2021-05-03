@@ -32,7 +32,7 @@ class ApiController:
 		requestVeiculos = requests.get(url_modelos + ".json").json()
 
 		for veiculo in requestVeiculos:
-			time.sleep(4)
+			time.sleep(6)
 			self.processaVeiculo(veiculo['id'], idMarca)
 
 
